@@ -31,16 +31,100 @@ var slideIndex = 1;
 showDivs(slideIndex);
 
 function plusDivs(n) {
-    showDivs(slideIndex += n);
+    showDivs((slideIndex += n));
 }
 
 function showDivs(n) {
     var i;
     var x = document.getElementsByClassName("mySlides");
-    if (n > x.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = x.length} ;
+    if (n > x.length) {slideIndex = 1;}
+    if (n < 1) {slideIndex = x.length;}
     for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";
     }
     x[slideIndex-1].style.display = "block";
 }
+
+var slidePackage0 = 1;
+showPackage0(slidePackage0);
+
+function plusPackage0(n) {
+    showPackage0((slidePackage0 += n));
+}
+
+function showPackage0(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlidesPackage0");
+    if (n > x.length) {slidePackage0 = 1;}
+    if (n < 1) {slidePackage0 = x.length;}
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    x[slidePackage0-1].style.display = "block";
+}
+
+var slidePackage1 = 1;
+showPackage1(slidePackage1);
+
+function plusPackage1(n) {
+    showPackage1((slidePackage1 += n));
+}
+
+function showPackage1(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlidesPackage1");
+    if (n > x.length) {slidePackage1 = 1;}
+    if (n < 1) {slidePackage1 = x.length;}
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    x[slidePackage1-1].style.display = "block";
+}
+
+var slidePackage2 = 1;
+showPackage2(slidePackage2);
+
+function plusPackage2(n) {
+    showPackage2((slidePackage2 += n));
+}
+
+function showPackage2(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlidesPackage2");
+    if (n > x.length) {slidePackage2 = 1;}
+    if (n < 1) {slidePackage2 = x.length;}
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    x[slidePackage2-1].style.display = "block";
+}
+
+
+var slidePackage3 = 1;
+showPackage3(slidePackage3);
+
+function plusPackage3(n) {
+    showPackage3((slidePackage3 += n));
+}
+
+function showPackage3(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlidesPackage3");
+    if (n > x.length) {slidePackage3 = 1;}
+    if (n < 1) {slidePackage3 = x.length;}
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    x[slidePackage3-1].style.display = "block";
+}
+
+setInterval(() => {
+    plusDivs(1);
+}, 3000);
+
+setInterval(() => {
+    plusPackage0(1);
+    plusPackage1(1);
+    plusPackage2(1);
+    plusPackage3(1);
+}, 1500);
