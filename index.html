@@ -8,7 +8,6 @@
 </head>
 <body>
     <header id="header" class="header-wrapper">
-        <h1 class="logo">Hai <span id="namaPengunjung"></span> Selamat Datang!</h1>
         <nav class="menu">
             <ul>
                 <li><a href="#beranda">Beranda</a></li>
@@ -16,18 +15,26 @@
                 <li><a href="#kontak">Kontak</a></li>
             </ul>
         </nav>
+        <h1 class="logo">Hai <span id="namaPengunjung"></span> Selamat Datang!</h1>
     </header>
     <!-- <section id="beranda" class="image-section">
         <div class="overlay"></div>
      </section> -->
     <section>
-        <div>
-            <img class="mySlides" src="./source/img/show0.jpg"/>
-            <img class="mySlides" src="./source/img/show1.jpg"/>
-            <img class="mySlides" src="./source/img/show2.jpg"/>
-            <img class="mySlides" src="./source/img/show3.jpg"/>
-            <img class="mySlides" src="./source/img/show4.jpg"/>
-            <img class="mySlides" src="./source/img/show5.jpg"/>
+        <div class="w3-content w3-display-container" >
+            <img class="mySlides" src="./source/img/show0.jpg" style="width:100%">
+            <img class="mySlides" src="./source/img/show1.jpg" style="width:100%">
+            <img class="mySlides" src="./source/img/show2.jpg" style="width:100%">
+            <img class="mySlides" src="./source/img/show3.jpg" style="width:100%">
+            <img class="mySlides" src="./source/img/show4.jpg" style="width:100%">
+            <img class="mySlides" src="./source/img/show5.jpg" style="width:100%">
+            <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+              <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+              <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+              <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+              <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+              <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+            </div>
             <!-- <button onclick="plusDivs(-1)">Sebelumnya</button>
             <button onclick="plusDivs(1)">Selanjutnya</button> -->
         </div>
