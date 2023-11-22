@@ -303,7 +303,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 	}
 }
 
-.image-section {
+/* .image-section {
 	position: relative;
 	background-image: url('https://www.gotravelaindonesia.com/wp-content/uploads/Pura-Luwur-Uluwatu.jpg');
 	background-size: cover;
@@ -314,7 +314,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 	display: center;
 	justify-content: center;
 	align-items: center;
-}
+} */
 
 .overlay {
 	position: absolute;
