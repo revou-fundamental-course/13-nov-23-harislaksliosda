@@ -5,12 +5,11 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="css/style.css">
-    <title>Travel Kita</title>
 </head>
 <body>
-    <header id="header">
-        <h1>Hai <span id="namaPengunjung"></span> Selamat Datang!</h1>
-        <nav>
+    <header id="header" class="header-wrapper">
+        <h1 class="logo">Hai <span id="namaPengunjung"></span> Selamat Datang!</h1>
+        <nav class="menu">
             <ul>
                 <li><a href="#beranda">Beranda</a></li>
                 <li><a href="#paket">Paket Perjalanan</a></li>
@@ -69,20 +68,20 @@
                 <div class="form">
                     <h2>Kontak Kami</h2>
                     <form  name="formPesan" onsubmit="return validateForm()">
-                        Nama: <input placeholder="Isi dengan nama lengkap anda" type="text" name="input-nama" /><br>
-                        Email: <input  placeholder="Pastikan alamat email anda sudah benar dan aktif" type="email" name="email" /><br>
+                        Nama: <input placeholder="Isi dengan nama lengkap anda" type="text" name="input-nama"/><br>
+                        Email: <input  placeholder="Pastikan alamat email anda sudah benar dan aktif" type="email" name="email"/><br>
                         Pesan: <textarea placeholder="Silahkan isi dengan pertanyaan, kritik atau saran dari anda" name="pesan"></textarea><br>
-                        <input type="submit" value="Kirim">Kirim</input>
+                        <input type="submit" value="Kirim"/>
                         <p id="data-kosong"></p>
                     </form>
                     <h4>*Pesan anda akan segera kami respon.</h4>
                 </div>
             </div>
-            <div >
+            <!-- <div>
                 <p>Nama : <span id="sender-name"></span></p>
                 <p>Email : <span id="sender-email"></span></p>
                 <p>Pesan : <span id="sender-pesan"></span></p>
-            </div>
+            </div> -->
         </section>
     <footer>
         &copy; Made with ❤ by Travel Kita 2023

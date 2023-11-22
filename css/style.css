@@ -49,6 +49,20 @@ li {
 			color: white;
 		}
 
+@media only screen and (max-width: 600px) {
+	.header-wrapper {
+		flex-direction: column;
+	}
+
+	.menu {
+		width: 100%;
+		flex-direction: column;
+	}
+
+	.logo {
+		margin-bottom: 14px;
+	}
+}
 
 .image-section {
 	position: relative;
@@ -58,7 +72,7 @@ li {
 	height: 600px;
 	color: #fff;
 	text-align: center;
-	display: flex;
+	display: center;
 	justify-content: center;
 	align-items: center;
 }
