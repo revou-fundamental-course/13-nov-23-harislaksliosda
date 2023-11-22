@@ -5,21 +5,22 @@ function replaceName() {
 // replaceName();
 
 function validateForm () {
-    const nama = document.forms["formPesan"]["nama"].value;
+    const name = document.forms["formPesan"]["nama"].value;
     const email = document.forms["formPesan"]["email"].value;
     const pesan = document.forms["formPesan"]["pesan"].value;
 
-    if (nama == "" || email == "" || pesan == "") {
-        alert("Data tidak boleh kosong");
+    if (name == "" || email == "" || pesan == "") {
+        document.getElementById("data-kosong").innerHTML = "Data tidak boleh kosong!"
+        // alert("Data tidak boleh kosong");
         return false;
     }
-    setSenderUI(nama, email, pesan);
+    setSenderUI(name, email, pesan);
     return false;
 }
-// validateForm();
+validateForm();
 
-function setSenderUI(nama, email, pesan){
-    document.getElementById("sender-name").innerHTML = nama;
+function setSenderUI(name, email, pesan){
+    document.getElementById("sender-name").innerHTML = name;
     document.getElementById("sender-email").innerHTML = email;
     document.getElementById("sender-pesan").innerHTML = pesan;
 }
