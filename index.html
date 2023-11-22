@@ -66,23 +66,23 @@
                         <li>JL. Raya Perserikatan No.1 Blok A Kav.261 Rawamangun, Jakarta Timur</li>
                     </ul>
                 </div>
-                <div class="form" name="formPesan" onsubmit="return validateForm()">
+                <div class="form">
                     <h2>Kontak Kami</h2>
-                    <form>
-                        Nama: <input placeholder="Isi dengan nama lengkap anda" type="text" id="nama" name="nama" /><br>
-                        Email: <input type="email" name="email" placeholder="Pastikan alamat email anda sudah benar dan aktif" /><br>
+                    <form  name="formPesan" onsubmit="return validateForm()">
+                        Nama: <input placeholder="Isi dengan nama lengkap anda" type="text" name="input-nama" /><br>
+                        Email: <input  placeholder="Pastikan alamat email anda sudah benar dan aktif" type="email" name="email" /><br>
                         Pesan: <textarea placeholder="Silahkan isi dengan pertanyaan, kritik atau saran dari anda" name="pesan"></textarea><br>
-                        <input type="submit" value="Kirim"/>
+                        <input type="submit" value="Kirim">Kirim</input>
                         <p id="data-kosong"></p>
                     </form>
                     <h4>*Pesan anda akan segera kami respon.</h4>
                 </div>
             </div>
-            <!-- <div >
+            <div >
                 <p>Nama : <span id="sender-name"></span></p>
                 <p>Email : <span id="sender-email"></span></p>
                 <p>Pesan : <span id="sender-pesan"></span></p>
-            </div> -->
+            </div>
         </section>
     <footer>
         &copy; Made with ❤ by Travel Kita 2023
